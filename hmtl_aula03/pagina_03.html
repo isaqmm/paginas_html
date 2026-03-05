@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página 3</title>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: url('https://4kwallpapers.com/images/wallpapers/luffy-laughing-one-5120x2880-12358.png') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .conteudo {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+    }
+
+    h1 { font-size: 50px; margin-bottom: 40px; }
+
+    .seta { font-size: 60px; margin-bottom: 30px; }
+
+    .links a {
+        display: block;
+        margin: 10px auto;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        width: 250px;
+        padding: 10px 0;
+        border: 2px solid white;
+        border-radius: 8px;
+        transition: 0.3s;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .links a:hover {
+        color: yellow;
+        border-color: yellow;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+</style>
+</head>
+<body>
+
+<div class="conteudo">
+    <h1>Página 3</h1>
+    <div class="seta">↓</div>
+    <div class="links">
+        <a href="pagina_01.html">Voltar para Página 1</a>
+        <a href="pagina_04.html">Ir para Página 4</a>
+        <a href="pagina_02.html">Ir para Página 2</a>
+        <a href="pagina_05.html">Ir para Página 5</a>
+    </div>
+</div>
+
+</body>
+</html>

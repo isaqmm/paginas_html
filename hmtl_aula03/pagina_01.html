@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>duas_pg</title>
+<style>
+    /* Faz a tela inteira */
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Fundo com imagem e overlay */
+    body {
+        background: url('https://4kwallpapers.com/images/wallpapers/luffy-laughing-one-5120x2880-12358.png') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Overlay escuro */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* metade transparente */
+        z-index: 1;
+    }
+
+    /* Conteúdo centralizado acima do overlay */
+    .conteudo {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .seta {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .links a {
+        display: block;
+        margin: 10px auto;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        width: 250px;
+        padding: 10px 0;
+        border: 2px solid white;
+        border-radius: 8px;
+        transition: 0.3s;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .links a:hover {
+        color: yellow;
+        border-color: yellow;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+</style>
+</head>
+<body>
+
+<div class="conteudo">
+    <h1>Olá, essa é a página um!</h1>
+    <div class="seta">↓</div>
+    <div class="links">
+        <a href="pagina_02.html">Ir para página 2</a>
+        <a href="pagina_03.html">Ir para página 3</a>
+        <a href="pagina_04.html">Ir para página 4</a>
+        <a href="pagina_05.html">Ir para página 5</a>
+    </div>
+</div>
+
+</body>
+</html>
